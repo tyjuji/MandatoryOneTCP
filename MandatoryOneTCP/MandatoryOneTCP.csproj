@@ -5,4 +5,18 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ExternDLL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Json" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MandatoryOneLibrary">
+      <HintPath>ExternDLL\MandatoryOneLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

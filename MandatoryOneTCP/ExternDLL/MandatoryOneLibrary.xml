@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MandatoryOneLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:MandatoryOneLibrary.Book">
+            <summary>
+            Describes a book.
+            </summary>
+        </member>
+        <member name="P:MandatoryOneLibrary.Book.Title">
+            <summary>
+            The title of the book
+            </summary>
+        </member>
+        <member name="P:MandatoryOneLibrary.Book.Author">
+            <summary>
+            The author of the book. First name and last name.
+            </summary>
+        </member>
+        <member name="P:MandatoryOneLibrary.Book.PageNumber">
+            <summary>
+            Total number of pages in the book.
+            </summary>
+        </member>
+        <member name="P:MandatoryOneLibrary.Book.ISBN13">
+            <summary>
+            International Standard Book Number. Unique identifier for a book. Must be 13 digits.
+            </summary>
+        </member>
+    </members>
+</doc>
