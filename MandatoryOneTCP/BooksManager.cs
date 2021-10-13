@@ -15,7 +15,7 @@ namespace MandatoryOneTCP
             new Book {Title = "The Agile Samurai",
                     Author = "Jonathan Rasmusson",
                     PageNumber = 280, ISBN13 = "9781934356586"}
-            };
+        };
 
         public IEnumerable<Book> GetAll()
         {
