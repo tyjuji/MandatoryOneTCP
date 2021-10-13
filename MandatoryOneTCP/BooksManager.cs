@@ -1,17 +1,13 @@
-﻿using System;
+﻿using MandatoryOneLibrary;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MandatoryOneLibrary;
 
 namespace MandatoryOneTCP
 {
-public class BooksManager
+    public class BooksManager
     {
-        private List<Book> _books = new List<Book>{ 
-            new Book {Title = "Computer Networking, Global Edition", 
-                    Author = "James Kurose, Keith Ross", 
+        private List<Book> _books = new List<Book>{
+            new Book {Title = "Computer Networking, Global Edition",
+                    Author = "James Kurose, Keith Ross",
                     PageNumber = 800, ISBN13 = "9781292405469"},
             new Book {Title = "Extreme Programming Explained",
                     Author = "Kent Beck, Cynthia Andres",
@@ -20,11 +16,6 @@ public class BooksManager
                     Author = "Jonathan Rasmusson",
                     PageNumber = 280, ISBN13 = "9781934356586"}
             };
-
-        public BooksManager()
-        {
-
-        }
 
         public IEnumerable<Book> GetAll()
         {
@@ -38,7 +29,7 @@ public class BooksManager
 
         public Book PostBook(Book book)
         {
-            if(!_books.Contains(book))
+            if (!_books.Contains(book))
             {
                 _books.Add(book);
             }
